@@ -1,0 +1,3 @@
+[submodule "mpv-copyTime"]
+	path = mpv-copyTime
+	url = https://github.com/Arieleg/mpv-copyTime.git
