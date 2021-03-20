@@ -10,7 +10,7 @@ mpv config files
 
 ```bat
 cd %AppData%
-git clone https://github.com/rmatttu/mpv-config.git mpv
+git clone https://github.com/rmatttu/mpv-config.git mpv --recursive
 ```
 
 # References
