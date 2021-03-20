@@ -9,7 +9,7 @@ mpv config files
 ## Windows
 
 ```bat
-cd %AppData%\Roaming
+cd %AppData%
 git clone https://github.com/rmatttu/mpv-config.git mpv
 ```
 
