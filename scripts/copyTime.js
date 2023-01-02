@@ -1,1 +1,0 @@
-../mpv-copyTime/copyTime.js

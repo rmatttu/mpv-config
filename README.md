@@ -8,9 +8,19 @@ mpv config files
 
 ## Windows
 
+### Normal install
+
 ```bat
 cd %AppData%
 git clone https://github.com/rmatttu/mpv-config.git mpv --recursive
+```
+
+### scoop
+
+```bash
+scoop bucket add extras
+scoop install mpv
+./copy-settings.sh ~/scoop/persist/mpv/portable_config
 ```
 
 # References
