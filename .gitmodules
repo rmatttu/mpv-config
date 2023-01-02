@@ -1,3 +1,6 @@
 [submodule "mpv-copyTime"]
 	path = mpv-copyTime
 	url = https://github.com/Arieleg/mpv-copyTime.git
+[submodule "mpv-copyStuff"]
+	path = mpv-copyStuff
+	url = https://github.com/0xR3V/mpv-copyStuff.git
