@@ -1,14 +1,12 @@
 # mpv-config
+
 mpv config files
 
-
-# Install
+## Install
 
 * Download mpv from [mpv.io | Installation](https://mpv.io/installation/)
 
-## Windows
-
-### Normal install
+### Windows
 
 ```bat
 cd %AppData%
@@ -23,7 +21,7 @@ scoop install mpv
 ./copy-settings.sh ~/scoop/persist/mpv/portable_config
 ```
 
-# References
+## References
 
 * [mpv.io](https://mpv.io/)
 * [User Scripts · mpv-player/mpv Wiki](https://github.com/mpv-player/mpv/wiki/User-Scripts)
