@@ -40,7 +40,7 @@ jobs:
           ./copy-settings.sh ./release
           mv release.txt ./release
           cd release
-          tar -zcvf release.tar.gz .
+          tar -zcvf ../release.tar.gz .
 
       - name: Upload assets
         uses: actions/upload-artifact@v4
