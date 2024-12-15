@@ -8,9 +8,15 @@ mpv config files
 
 ### Windows
 
-```bat
-cd %AppData%
-git clone https://github.com/rmatttu/mpv-config.git mpv --recursive
+On PowerShell.
+
+```powershell
+cd $env:APPDATA
+mkdir mpv
+cd mpv
+wget https://github.com/rmatttu/mpv-config/releases/latest/download/release.tar.gz -O release.tar.gz
+tar xf release.tar.gz
+rm release.tar.gz
 ```
 
 ### scoop
@@ -18,7 +24,7 @@ git clone https://github.com/rmatttu/mpv-config.git mpv --recursive
 ```bash
 scoop bucket add extras
 scoop install mpv
-./copy-settings.sh ~/scoop/persist/mpv/portable_config
+curl -sLJ https://github.com/rmatttu/mpv-config/releases/latest/download/release.tar.gz | tar zxf -
 ```
 
 ## References
