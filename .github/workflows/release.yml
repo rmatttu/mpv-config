@@ -30,9 +30,9 @@ jobs:
       - name: Create Release.txt
         run: |
           (
-            printf "repository_url\t%s\n", "${{github.repositoryUrl}}"
-            printf "ref\t%s\n", "${{github.ref}}"
-            printf "ref\t%s\n", "${{github.sha}}"
+            printf "repository_url\t%s\n" "${{github.repositoryUrl}}"
+            printf "ref\t%s\n" "${{github.ref}}"
+            printf "ref\t%s\n" "${{github.sha}}"
           ) | tee release.txt
 
       - name: Create assets
