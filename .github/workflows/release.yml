@@ -33,11 +33,12 @@ jobs:
             printf "repository_url\t%s\n", "${{github.repositoryUrl}}"
             printf "ref\t%s\n", "${{github.ref}}"
             printf "ref\t%s\n", "${{github.sha}}"
-          ) | tee "Release.txt"
+          ) | tee release.txt
 
       - name: Create assets
         run: |
           ./copy-settings.sh ./release
+          mv release.txt ./release
           tar -zcvf release.tar.gz ./release
 
       - name: Upload assets
