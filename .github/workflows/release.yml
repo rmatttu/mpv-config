@@ -6,7 +6,7 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main", "dev", "add-ci" ]
+    branches: [ "main" ]
     tags: [ "*" ]
   pull_request:
     branches: [ "main" ]
@@ -39,7 +39,8 @@ jobs:
         run: |
           ./copy-settings.sh ./release
           mv release.txt ./release
-          tar -zcvf release.tar.gz ./release
+          cd release
+          tar -zcvf release.tar.gz .
 
       - name: Upload assets
         uses: actions/upload-artifact@v4
