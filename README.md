@@ -21,9 +21,13 @@ rm release.tar.gz
 
 ### scoop
 
+On bash.
+
 ```bash
 scoop bucket add extras
 scoop install mpv
+mkdir -p ~/scoop/persist/mpv/portable_config
+cd ~/scoop/persist/mpv/portable_config
 curl -sLJ https://github.com/rmatttu/mpv-config/releases/latest/download/release.tar.gz | tar zxf -
 ```
 
